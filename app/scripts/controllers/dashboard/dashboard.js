@@ -2,16 +2,19 @@
 
 /**
  * @ngdoc function
- * @name dashboardApp.controller:MainCtrl
+ * @name dashboardApp.controllers:DashboardCtrl
  * @description
- * # MainCtrl
+ * # DashboardCtrl
  * Controller of the dashboardApp
  */
 angular.module('dashboardApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('DashboardCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+  }
+);
+
+

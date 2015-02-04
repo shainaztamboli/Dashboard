@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc function
- * @name dashboardApp.controller:OrganizationsCtrl
+ * @name dashboardApp.controllers:OrganizationsCtrl
  * @description
  * # OrganizationsCtrl
  * Controller of the dashboardApp

@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc function
- * @name dashboardApp.controller:BarchartCtrl
+ * @name dashboardApp.controllers:BarchartCtrl
  * @description
  * # BarchartCtrl
  * Controller of the dashboardApp

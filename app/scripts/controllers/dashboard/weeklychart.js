@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc function
- * @name dashboardApp.controller:LineCtrl
+ * @name dashboardApp.controllers:LineCtrl
  * @description
  * # LineCtrl
  * Controller of the dashboardApp

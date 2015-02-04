@@ -5,7 +5,7 @@
         <div class="panel-title">
           <div class="row">
             <div class="col-xs-12">
-              <input type="text" value="Synerzip">
+              <input type="text" ng-model="org.name">
             </div>
           </div>
         </div>
@@ -31,15 +31,10 @@
                   Projects
                 </div>
                 <div class="panel-stage">
-                  <ul>
+                  <ul ng-repeat="proj in org.projects">
                     <li>
-                      <input type="text" value="PDX">
-                    </li>
-                    <li>
-                      <input type="text" value="Google">
-                    </li>
-                    <li>
-                      <input type="text" value="Halliburton">
+                      <input type="text" ng-model="proj.name">
+                      <span class="glyphicon glyphicon-plus" ng-click="addProjects()" ng-show="$last"></span>
                     </li>
                   </ul>
                 </div>
@@ -49,10 +44,15 @@
           </div>
         </div>
         <div class="panel-notes">
-          Owned by Vinayak
+          <ul ng-repeat="emp in org.employees">
+            <li>
+              <input type="text" ng-model="emp.name">
+              <span class="glyphicon glyphicon-plus" ng-click="addEmployees()" ng-show="$last"></span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-
+<button ng-click="saveOrg()">submit</button>
 </div>

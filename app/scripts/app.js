@@ -17,36 +17,37 @@ angular
     'ngTouch',
     'ui.bootstrap',
     'ui.router',
-    'chart.js'
+    'chart.js',
+    'organization'
   ])
   .config(function ($stateProvider) {
     $stateProvider
       .state("dashboard", {
-        templateUrl: "views/dashboard.html",
+        templateUrl: "../views/dashboard/dashboard.html",
         controller: "DashboardCtrl",
         url: "/dashboard"
       })
     $stateProvider
       .state("organizations", {
-        templateUrl: "views/organizations.html",
+        templateUrl: "../views/organization/organizations.html",
         controller: "OrganizationsCtrl",
         url: "/organizations"
       })
     $stateProvider
       .state("organizations.list", {
-        templateUrl: "views/organizations.list.html",
+        templateUrl: "../views/organization/organizations.list.html",
         controller: "OrganizationsListCtrl",
         url: "/list"
       })
     $stateProvider
       .state("organizations.view", {
-        templateUrl: "views/organizations.view.html",
+        templateUrl: "../views/organization/organizations.view.html",
         controller: "OrganizationsViewCtrl",
         url: "/view/:orgId"
       })
     $stateProvider
       .state("organizations.edit", {
-        templateUrl: "views/organizations.edit.html",
+        templateUrl: "../views/organization/organizations.edit.html",
         controller: "OrganizationsEditCtrl",
         url: "/edit/:orgId"
       })
