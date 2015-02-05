@@ -62,7 +62,7 @@ angular.module('dashboardApp')
           });
         } else {
           OrganizationService.updateOrg($scope.org, function(result){
-            $state.transitionTo('organizations.view', {"orgId": result.id});
+            $state.transitionTo('organizations.view', {"orgId": result._id});
           });
 
         }

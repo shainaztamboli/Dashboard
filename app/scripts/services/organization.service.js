@@ -21,9 +21,7 @@ angular.module("organization")
     }
 
     service.getOrg = function (orgId, success) {
-      console.log("getOrg orgId: "+orgId);
       $http.get(service.baseRestUrl+'/api/organization/'+orgId).success(function (org) {
-        console.log("getOrg: "+org);
         success(org);
       });
     }
@@ -41,7 +39,7 @@ angular.module("organization")
     }
 
     service.deleteOrg = function (org, success) {
-      $http.delete(service.baseRestUrl+'/api/organization/' + org.id, org).success(function (result) {
+      $http.delete(service.baseRestUrl+'/api/organization/' + org._id, org).success(function (result) {
         success(result);
       });
 

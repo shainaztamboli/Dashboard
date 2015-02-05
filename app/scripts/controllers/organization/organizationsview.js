@@ -10,7 +10,7 @@
 angular.module('dashboardApp')
   .controller('OrganizationsViewCtrl', ['$scope','$state', '$stateParams', 'OrganizationService',
     function ($scope, $state, $stateParams, OrganizationService) {
-      console.log($stateParams);
+      console.log('$stateParams: '+$stateParams);
       OrganizationService.getOrg($stateParams.orgId, function(result){
         $scope.org = result;
       });
